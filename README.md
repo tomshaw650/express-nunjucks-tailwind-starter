@@ -4,4 +4,4 @@ A starter project using Express as a web server, Nunjucks as a templating system
 ## Get Started
 1. Run `npm install` to install dependencies
 2. Run `npm run dev` to start the dev server
-3. Navigate to (http://localhost:3000)[http://localhost:3000]
+3. Navigate to http://localhost:3000
