@@ -1,0 +1,25 @@
+{
+  "name": "express-nunjucks-tailwind-starter",
+  "version": "1.0.0",
+  "description": "A starter project using Express as a web server, Nunjucks as a templating system and TailwindCSS for styles",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js -e njk, css",
+    "tailwind:build": "tailwindcss build -i ./public/styles/tailwind.css -o ./public/styles/style.css",
+    "tailwind:watch": "tailwindcss build -i ./public/styles/tailwind.css -o ./public/styles/style.css --watch",
+    "dev": "concurrently \"npm run tailwind:watch\" \"npm start\""
+  },
+  "keywords": [],
+  "author": "Tom Shaw",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.1",
+    "express": "^4.18.2",
+    "nunjucks": "^3.2.4",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
